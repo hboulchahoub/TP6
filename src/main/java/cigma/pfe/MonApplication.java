@@ -14,5 +14,6 @@ public class MonApplication {
         System.out.println("testing...123");
         System.out.println("RG 123");
         System.out.println("RG 432");
+        System.out.println("RG 342");
     }
 }
