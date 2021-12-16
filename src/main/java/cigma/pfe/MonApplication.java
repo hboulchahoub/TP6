@@ -13,5 +13,6 @@ public class MonApplication {
         ctrl.save(client);
         System.out.println("testing...123");
         System.out.println("RG 123");
+        System.out.println("RG 432");
     }
 }
