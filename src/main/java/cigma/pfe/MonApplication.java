@@ -12,5 +12,6 @@ public class MonApplication {
         Client client =new Client(1,"ALAMI");
         ctrl.save(client);
         System.out.println("testing...123");
+        System.out.println("RG 123");
     }
 }
