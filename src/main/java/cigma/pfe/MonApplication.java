@@ -11,6 +11,6 @@ public class MonApplication {
         ClientController ctrl = (ClientController) context.getBean("controller"); // controller est l'id dans le fichier Spring.xml
         Client client =new Client(1,"ALAMI");
         ctrl.save(client);
-        System.out.println("testing...");
+        System.out.println("testing...123");
     }
 }
