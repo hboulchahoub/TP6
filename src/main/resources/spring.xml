@@ -2,14 +2,16 @@
         "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
 
-    <bean id="controller" class="cigma.pfe.contollers.ClientController" scope="prototype">
-        <constructor-arg  ref="service"/>
+    <bean id="idCtrl" class="ma.cigma.pfe.presentation.ClientController">
+
+        <property name="service" ref="idService"></property>
+
     </bean>
 
-    <bean id="service" class="cigma.pfe.services.ClientServiceImpl" scope="prototype">
-        <constructor-arg  ref="repository"/>
+    <bean id="idService" class="ma.cigma.pfe.service.ClientServiceImpl">
+        <property name="dao" ref="idDao"/>
     </bean>
 
-    <bean id="repository" class="cigma.pfe.repositories.ClientRepositoryImpl" scope="prototype"></bean>
+    <bean id="idDao" class="ma.cigma.pfe.dao.ClientDaoImpl"/>
 
 </beans>
